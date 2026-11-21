@@ -1,0 +1,205 @@
+
+.session-form-page {
+  padding: 25px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.session-back-button {
+  border: none;
+  background: transparent;
+  color: #526078;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.session-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.session-heading-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: #e9edff;
+  color: #5366d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.session-form-heading h2 {
+  font-size: 25px;
+  margin: 0 0 6px;
+  color: #202b42;
+}
+
+.session-form-heading p {
+  margin: 0;
+  color: #788399;
+  font-size: 14px;
+}
+
+.session-form-card {
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(30, 45, 70, 0.04);
+}
+
+.session-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 21px;
+  flex: 1;
+}
+
+.session-form-group label {
+  color: #344057;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.session-form-group input,
+.session-form-group select,
+.session-form-group textarea {
+  width: 100%;
+  border: 1px solid #dce1ea;
+  border-radius: 8px;
+  padding: 12px 13px;
+  color: #344057;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.session-form-group input:focus,
+.session-form-group select:focus,
+.session-form-group textarea:focus {
+  border-color: #6879df;
+  box-shadow: 0 0 0 3px rgba(104, 121, 223, 0.1);
+}
+
+.session-form-group textarea {
+  resize: vertical;
+}
+
+.session-form-group small {
+  color: #d17a39;
+}
+
+.session-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.session-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #edf0f5;
+  padding-top: 20px;
+  margin-top: 5px;
+}
+
+.session-form-actions button,
+.session-empty-message button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.session-cancel-button {
+  background: #f0f2f6;
+  color: #58647a;
+}
+
+.session-save-button,
+.session-empty-message button {
+  background: #5366d8;
+  color: #fff;
+}
+
+.session-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.session-alert {
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.session-alert.error {
+  background: #fff0f0;
+  color: #c43c3c;
+  border: 1px solid #ffd5d5;
+}
+
+.session-empty-message {
+  text-align: center;
+  padding: 35px;
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+}
+
+.session-empty-message p {
+  color: #788399;
+}
+
+.session-empty-message button {
+  margin: 15px auto 0;
+}
+
+.session-loading {
+  padding: 50px;
+  text-align: center;
+  color: #68758c;
+}
+
+@media (max-width: 650px) {
+  .session-form-page {
+    padding: 16px;
+  }
+
+  .session-form-card {
+    padding: 18px;
+  }
+
+  .session-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .session-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .session-form-actions button {
+    width: 100%;
+  }
+}

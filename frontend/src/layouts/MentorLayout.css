@@ -1,0 +1,142 @@
+.mentor-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.mentor-sidebar {
+    width: 250px;
+    background: #172554;
+    color: white;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.mentor-brand {
+    margin-bottom: 35px;
+}
+
+.mentor-brand h2 {
+    font-size: 21px;
+    margin: 0;
+}
+
+.mentor-brand p {
+    color: #a5b4fc;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.mentor-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 5px;
+    border-top: 1px solid #334477;
+    border-bottom: 1px solid #334477;
+    margin-bottom: 25px;
+}
+
+.mentor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6366f1;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.mentor-user strong,
+.mentor-user small {
+    display: block;
+}
+
+.mentor-user small {
+    color: #a5b4fc;
+    margin-top: 4px;
+}
+
+.mentor-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.mentor-nav a,
+.mentor-logout {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #dbeafe;
+    font-size: 14px;
+}
+
+.mentor-nav a:hover,
+.mentor-nav a.active {
+    background: #3730a3;
+    color: white;
+}
+
+.mentor-logout {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: auto;
+    width: 100%;
+}
+
+.mentor-logout:hover {
+    background: #991b1b;
+    color: white;
+}
+
+.mentor-main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+@media (max-width: 700px) {
+    .mentor-layout {
+        flex-direction: column;
+    }
+
+    .mentor-sidebar {
+        width: 100%;
+    }
+
+    .mentor-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mentor-main {
+        padding: 18px;
+    }
+}
+
+.sidebar-logout {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    border-radius: 8px;
+}
+
+.sidebar-logout:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+}

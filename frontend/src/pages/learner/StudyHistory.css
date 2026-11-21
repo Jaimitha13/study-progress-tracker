@@ -1,0 +1,281 @@
+
+.study-history-page {
+  padding: 25px;
+}
+
+.study-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.study-history-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #5366d8;
+}
+
+.study-history-title h2 {
+  color: #202b42;
+  font-size: 25px;
+  margin: 0;
+}
+
+.study-history-header p {
+  color: #788399;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.add-study-session-button,
+.study-history-empty button {
+  background: #5366d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.study-history-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.history-stat-card {
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.history-stat-icon {
+  width: 46px;
+  height: 46px;
+  background: #e9edff;
+  color: #5366d8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.history-stat-card p {
+  color: #788399;
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+
+.history-stat-card h3 {
+  color: #202b42;
+  margin: 0;
+  font-size: 23px;
+}
+
+.study-history-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.study-history-list-heading h3 {
+  color: #26334b;
+  font-size: 18px;
+  margin: 0;
+}
+
+.study-history-list-heading span {
+  color: #8791a4;
+  font-size: 13px;
+}
+
+.study-session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.study-session-card {
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.study-session-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  background: #e9edff;
+  color: #5366d8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.study-session-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.study-session-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.study-session-title-row h4 {
+  color: #26334b;
+  font-size: 16px;
+  margin: 0;
+}
+
+.study-session-duration {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #5366d8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.study-session-goal {
+  color: #788399;
+  font-size: 13px;
+  margin: 7px 0;
+}
+
+.study-session-note {
+  color: #536078;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.study-session-date {
+  color: #8993a5;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.study-session-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.study-session-actions button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 7px;
+  background: #f0f2f8;
+  color: #586b9b;
+  cursor: pointer;
+}
+
+.study-session-actions .delete-session-button {
+  color: #d74d4d;
+  background: #fff0f0;
+}
+
+.study-history-empty {
+  text-align: center;
+  padding: 55px 20px;
+  background: #fff;
+  border: 1px dashed #d9deea;
+  border-radius: 13px;
+}
+
+.study-history-empty > svg {
+  color: #8998dc;
+  font-size: 38px;
+}
+
+.study-history-empty h3 {
+  color: #26334b;
+  margin: 15px 0 8px;
+}
+
+.study-history-empty p {
+  color: #8791a4;
+  font-size: 14px;
+}
+
+.study-history-empty button {
+  margin: 20px auto 0;
+}
+
+.history-alert {
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.history-alert.error {
+  background: #fff0f0;
+  color: #c43c3c;
+}
+
+.history-alert.success {
+  background: #eaf8ef;
+  color: #267a45;
+}
+
+.study-history-loading {
+  padding: 50px;
+  text-align: center;
+  color: #68758c;
+}
+
+@media (max-width: 700px) {
+  .study-history-page {
+    padding: 16px;
+  }
+
+  .study-history-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .study-history-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .study-session-card {
+    flex-wrap: wrap;
+  }
+
+  .study-session-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .study-session-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
